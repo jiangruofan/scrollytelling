@@ -341,6 +341,7 @@ var yBar2 = d3.axisLeft().scale(y2);
   function showTitle() {
     g.selectAll(".count-title").transition().duration(0).attr("opacity", 0);
     hideYBar(yBar);
+    hideYBar2(yBar2);
 
     g.selectAll(".openvis-title")
       .transition()
